@@ -33,7 +33,8 @@ def normalize(input_string):
              >>> tp.normalize(input_string2)
              'extra space'
     """
-    normalized_string = None
+    split_list = input_string.lower().split()
+    normalized_string = " ".join(split_list)
     return normalized_string
 
 
